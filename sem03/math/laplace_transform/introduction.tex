@@ -1,0 +1,39 @@
+
+\chapter{Introduction}
+The Laplace transform is a mathematical tool that turns time-based functions
+into frequency-based functions, making it easier to solve complex problems in
+engineering and physics. It helps us understand how systems behave over time by
+looking at their frequency components.\\
+Basically laplace transform allows to write differential equations in form of a
+algebraic equation.
+
+\section{Principle Formula}
+If we want to find the LT of any equation for example $F(t)$ we can find it
+using the following formula:
+
+\begin{equation*}
+    L\biggl\{L(t)\biggr\} = \int_0^{\infty} F(t) e^{-st} dt = f(s)
+\end{equation*}
+
+Hence we can summarize
+\begin{define}
+    Let $F(t)$ be a function of $t$ specified for $t>0$ then the laplace
+    transform of $F(t)$ is defined by $L\biggl\{L(t)\biggr\} = \int_0^{\infty}
+        F(t) e^{-st} dt = f(s)$
+\end{define}
+
+\section{Basic Formulas}
+The following formulas can be memorized without any hesitations.
+\begin{multicols}{2}
+    % Start an enumerate environment
+    \begin{enumerate}
+        \item  $L\bigl\{1\bigr\} = \dfrac{1}{s}$
+        \item  $L\bigl\{t\bigr\} = \dfrac{1}{s^2}$
+        \item  $L\bigl\{t^n\bigr\} = \dfrac{n!}{s^{n+1}}$
+        \item  $L\bigl\{\sin{at}\bigr\} = \dfrac{a}{s^2 +a^2}$
+        \item  $L\bigl\{\cos{at}\bigr\} = \dfrac{s}{s^2 +a^2}$
+        \item  $L\bigl\{\sinh{at}\bigr\} = \dfrac{a}{s^2 -a^2}$
+        \item  $L\bigl\{\cosh{at}\bigr\} = \dfrac{s}{s^2 -a^2}$
+    \end{enumerate}
+    % End the two-column environment
+\end{multicols}
